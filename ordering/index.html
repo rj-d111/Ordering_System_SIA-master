@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Grub&Grab</title>
+</head>
+<body>
+  <!--sidebar-->  
+    <div class="sidebar">
+<!--logo-->
+        <h1 class="logo">Grub&Grab</h1>
+
+<!--list of menus-->
+    <div class="sidebar-menus">
+        <a href="#"><ion-icon name="storefront-outline"></ion-icon>Home</a>
+        <a href="#"><ion-icon name="receipt-outline"></ion-icon>Bill</a>
+        <a href="#"><ion-icon name="wallet-outline"></ion-icon>Wallet</a>
+        <a href="#"><ion-icon name="notifications-outline"></ion-icon>Notification</a>
+        <a href="#"><ion-icon name="chatbubbles-outline"></ion-icon>Contact Us</a>
+        <a href="#"><ion-icon name="settings-outline"></ion-icon>Setting</a>
+
+    </div>
+
+<!--logout-->
+    <div clas="sidebar-logout">
+        <a href="#"><ion-icon name="log-out-outline"></ion-icon>Logout</a>
+    </div>
+    </div>
+<!--main-->
+    <div class="main">
+<!--main navbar-->
+    <div class="main-navbar">
+        <!--menu when appear mobile version-->
+        <ion-icon class="menu-toggle" name="menu-outline"></ion-icon>
+        <!--search bar-->
+        <div class="search">
+            <input type="text" placeholder="What do you want to order?">
+            <button class="search-btn">Search</button>
+        </div>
+        <!--profile icon on left side of navbar-->
+        <div class="profile">
+            <a class="cart" href="#"><ion-icon name="cart-outline"></ion-icon></a>
+            <a class="user" href="#"><ion-icon name="person-outline"></ion-icon></a>
+        </div>
+    </div>
+<!--main highlight-->
+    <div class="main-highlight">
+        <!--title section and arrow-->
+        <div class="main-header">
+            <h2 class="main-title">Recommendations</h2>
+            <div class="main-arrow">
+                <ion-icon class="back" name="chevron-back-circle-outline"></ion-icon>
+                <ion-icon class="next" name="chevron-forward-circle-outline"></ion-icon>
+            </div>
+        </div>
+        <!--highlight menu-->
+        <div class="highlight-wrapper">
+            <div class="highlight-card">
+                <img class="highlight-img" src="img/adobo.jpg">
+                <div class="highlight-desc">
+                    <h4>Chicken Adobo with Rice</h4>
+                    <p>₱85</p>
+                </div>
+            </div>
+            <div class="highlight-card">
+                <img class="highlight-img" src="img/sisig.jpg">
+                <div class="highlight-desc">
+                    <h4>Sisig with Rice</h4>
+                    <p>₱100</p>
+            </div>
+        </div>
+        <div class="highlight-card">
+            <img class="highlight-img" src="img/menudo.jpg">
+            <div class="highlight-desc">
+                <h4>Menudo with Rice</h4>
+                <p>₱95</p>
+
+            </div>
+        </div>
+            <div class="highlight-card">
+                <img class="highlight-img" src="img/bicol.jpeg">
+                <div class="highlight-desc">
+                    <h4>Bicol Express with Rice</h4>
+                    <p>₱100</p>    
+                </div> 
+    </div>
+        </div>
+        </div>
+<!--main menus/order-->
+    <div class="main-menus">
+        <!--filter section-->
+        <div class="main-filter">
+            <div>
+                <h2 class="main-title">Menu<br>Category</h2>
+                <div class="main-arrow">
+                    <ion-icon class="back-menus" name="chevron-back-circle-outline"></ion-icon>
+                    <ion-icon class="next-menus" name="chevron-forward-circle-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="filter-wrapper">
+                <div class="filter-card">
+                    <div class="filter-icon">
+                        <ion-icon name="restaurant-outline"></ion-icon>
+                    </div>
+                    <p>All Menus</p>
+                </div>
+                <div class="filter-card">
+                    <div class="filter-icon">
+                        <ion-icon name="fast-food-outline"></ion-icon>
+                    </div>
+                    <p>Combo Meals</p>
+                </div>
+                <div class="filter-card">
+                    <div class="filter-icon">
+                        <ion-icon name="coffee-outline"></ion-icon>
+                    </div>
+                    <p>Juices</p>
+                </div>
+                <div clas="filter-card">
+                    <div class="filter-icon">
+                        <ion-icon name="drinks-outline"></ion-icon>
+                    </div>
+        </div>
+    </div>
+        <!--list of food menus-->
+    </div>
+    </div>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

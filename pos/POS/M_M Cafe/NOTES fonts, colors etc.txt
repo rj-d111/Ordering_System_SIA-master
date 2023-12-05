@@ -1,0 +1,18 @@
+M&M CAFE - COLOR
+
+	#D8BFA0; /*light nude*/
+	#F3FADC; /*mint cream*/
+	#2A4C09; /*dark green*/
+	#242424; /*dark gray*/
+	#ffffff; /*white*/
+
+
+
+
+M&M CAFE - FONT
+
+	(need ilagay sa itaas ng css para gumana ung font)
+		@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Lexend:wght@300;500&display=swap');
+	
+	"Lexend", sans-serif; /*for nav & captions*/
+	'League Spartan', sans-serif; /*for bold letters*/

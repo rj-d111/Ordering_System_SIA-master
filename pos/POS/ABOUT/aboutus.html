@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> About Us Page Design </title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../pos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<style>
+    #logo {
+        max-width: 200px;
+    }
+
+    li a {
+        text-decoration: none;
+        color: black;
+        padding-right: 50px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        
+
+
+    }
+
+    b {
+        font-size: 17px;
+        color: #2A4C09;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        padding-right: 30px;
+        margin: 10px;
+
+    }
+
+    i {
+        /* You can adjust this value to your desired size */
+        color: #2A4C09;
+    }
+
+    #menu li a {
+        transition: background-color 0.3s, color 0.3s;
+        /* This adds a smooth transition effect */
+        display: block;
+        /* Make the whole area of the <li> clickable */
+        padding: 10px 20px;
+        /* Some padding for better appearance */
+        text-decoration: none;
+        /* Removes the underline from links */
+        color: inherit;
+        /* Inherits the default color */
+    }
+
+    #menu li a:hover {
+        background-color: #D8BFA0;
+        /* Light gray background when hovered */
+        color: #333;
+        border-radius: 5px;
+        /* Dark text color when hovered */
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        padding-right: 30px;
+    }
+
+    li {
+        margin: 10px;
+    }
+    .aboutUs{
+        text-align: center;
+        font-size: 50px;
+    }
+</style>
+<body>
+  
+<header>
+    <img id="logo" src="../assets/SVG/decafPandaLogo.svg" alt="Logo" />
+    <nav>
+        <ul id="menu">
+            <li><a href="../M_M Cafe/index.html"><b>HOME</b></a></li>
+            <li><a href="../index.html"><b>MENU</b></a></li>
+            <li class="active"><a><b>ABOUT</b></a></li>
+            <li><a href="../Contact Us/contactus.html"><b>CONTACT US</b></a></li>
+            <li><a href="../cart.html"><i class="fas fa-shopping-cart fa-lg"></i></a></li>
+            <li><a href="../login_sign-up/login.html"><i class="fas fa-user fa-lg"></i></a></li>
+
+        </ul>
+    </nav>
+</header>
+
+
+    <!--================== Home Section Starts from Here ==================-->
+	<p class="aboutUs">ABOUT US</p>
+    <section id="home">
+        <div class="home-left">
+            <img src="mmm.jpg" alt="">
+        </div>
+        <div class="home-right">
+            <h2 class="home-heading">Our Story</h2>
+            <p class="home-para">M&M Cafe was born out of a passion for creating exceptional beverages and creating a cozy haven for friends and families to gather. Founded by a loving couple in 2022, our journey began when we embarked on a mission to bring a unique twist to the local milk tea scene. Since then, we've become a cherished part of the community, known not just for our refreshing drinks but for the warmth and hospitality we extend to each and every visitor.
+</p>
+   
+        </div>
+    </section>
+    <!--================== Home Section Ends Here -->
+
+    <!--================== Workflow Section Starts from Here ==================-->
+    <section id="MENU">
+        <h2 class="heading">Our Menu</h2>
+        <p class="para">We specialize in crafting the finest milkteas that satisfy your taste buds with a rich blend of tea and creamy goodness. But that's not all – we also offer a delightful selection of yogurt drinks that are not only delicious but also packed with probiotics for a healthy twist. If you're in the mood for something sparkling and refreshing, our soda pop options will surely hit the spot. And for those looking to satisfy their snack cravings, our delectable array of snacks is sure to please.</p>
+       
+    </section>
+    <!--================== Workflow Section Ends Here -->
+
+
+    <!--================== Goal Section Starts from Here ==================-->
+    <section id="goal">
+        <div class="goal-left">
+            <h2>Our Commitment</h2>
+            <p>At M&M Cafe, our passion lies in delighting your taste buds and offering a moment of rustle from the hustle and bustle of everyday life. We take pride in sourcing the finest ingredients and crafting our beverages with precision and care. Our commitment to quality, freshness, and customer satisfaction is at the core of everything we do.</p>
+        
+        </div>
+        <div class="goal-right">
+            <img src="mm.jpg" alt="">
+        </div>
+    </section>
+
+</body>
+<script src="script.js"></script>
+</html>

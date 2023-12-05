@@ -1,0 +1,682 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+/* Everything below this is the stylesheet for the products page */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /*Padding causing horizontal scroll
+  padding: 0 10px;*/
+  background-color: rgb(255, 255, 255);
+  
+
+}
+b{
+  font-size: 17px;
+  color: #2A4C09;
+  
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  padding-right: 30px;
+  
+}
+
+li {
+  margin: 0 10px;
+  
+}
+
+i {
+  /* You can adjust this value to your desired size */
+  color: #2A4C09;
+  
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+  padding-right: 50px;
+  
+}
+
+li a:hover {
+  color: #fdb91b;
+  
+}
+
+li a:active {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Base style for the links */
+#menu li a {
+  transition: background-color 0.3s, color 0.3s;
+  /* This adds a smooth transition effect */
+  display: block;
+  /* Make the whole area of the <li> clickable */
+  padding: 10px 20px;
+  /* Some padding for better appearance */
+  text-decoration: none;
+  /* Removes the underline from links */
+  color: inherit;
+  /* Inherits the default color */
+  
+}
+
+/* Hover effect */
+#menu li a:hover {
+  background-color: #D8BFA0;
+  /* Light gray background when hovered */
+  color: #333;
+  border-radius: 5px;
+  /* Dark text color when hovered */
+  
+}
+
+/* Active item styling */
+#menu li.active a {
+  background-color: #F3FADC;
+  color: #FFF;
+  border-radius: 5px;
+
+}
+
+
+/* PRODUCT PAGE STYLING START */
+
+.back-button-link:link,
+.back-button-link:visited {
+  text-decoration: none;
+  color: #000;
+  
+}
+
+.back-button-link:hover {
+  text-decoration: underline;
+  color: #363126;
+  
+}
+
+.back-button {
+  position: absolute;
+  top: -2.5em;
+  left: -0.5em;
+  
+}
+
+.product-container {
+  background-color: white;
+  border: 4px solid #fdb91b;
+  border-radius: 1em;
+  width: 65%;
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  display: flex;
+  
+}
+
+.product-page-images {
+  height: 250px;
+  width: 250px;
+  position: relative;
+  
+}
+
+.info-layout {
+  padding: 2em 1em 1em 1em;
+  
+}
+
+.info-layout h2,
+.info-layout p {
+  padding-bottom: 1.5em;
+}
+
+.info-layout span {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.lower-buttons .add-minus {
+  display: flex;
+  position: absolute;
+  bottom: -54px;
+  left: 1em;
+}
+
+.add-minus .minus-quantity,
+.add-minus .add-quantity {
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+.radios {
+  position: absolute;
+  left: 10em;
+  top: 13px;
+  display: flex;
+}
+
+.add-minus input[type="radio"] {
+  margin-right: 1em;
+}
+
+.add-minus label {
+  position: relative;
+  bottom: 5px;
+  padding-right: 1em;
+  padding-left: -1em;
+}
+
+.numOf {
+  position: relative;
+  top: 0.5em;
+  width: 3em;
+  height: 2em;
+  border: none;
+  text-align: center;
+}
+
+.add-quantity {
+  position: relative;
+  left: 1em;
+  cursor: pointer;
+}
+
+.add-quantity:hover,
+.minus-quantity:hover {
+  border: 1px solid #fdb91b;
+  color: #fdb91b;
+}
+
+.add-minus span {
+  position: relative;
+  top: 0.5em;
+  font-weight: bold;
+}
+
+.minus-quantity {
+  position: relative;
+  right: 1em;
+  cursor: pointer;
+}
+
+.lower-buttons .add-cart {
+  position: absolute;
+  bottom: -3em;
+  right: -0.5em;
+}
+
+#add-to-cart {
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: #2d2a24;
+  color: white;
+  padding: 10px 30px;
+
+  border-radius: 50px;
+  border-style: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#add-to-cart:hover {
+  background-color: #2d2a24d2;
+}
+
+/* PRODUCT PAGE STYLING END */
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+button {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.menu{
+  font-size: 20px;
+  color: black;
+}
+p {
+  font-weight: 400;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid #eaedee;
+  margin-bottom: 20px;
+  
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  padding-right: 30px;
+}
+
+li {
+  margin: 0 10px;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+li a:hover {
+  color: #fdb91b;
+}
+
+li a:active {
+  text-decoration: none;
+  color: #2d2a24;
+}
+
+#logo {
+  max-width: 200px;
+}
+
+/*FILTER BUTTON STYLING STARTS*/
+
+#productTop {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#productButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filterButton {
+  cursor: pointer;
+  margin: 10px;
+  font-size: 15px;
+  width: 100px;
+  height: 30px;
+  border-radius: 50px;
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#snacks,
+#hotDrinks,
+#coldDrinks {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 15px;
+  width: 100px;
+  height: 30px;
+  border-radius: 50px;
+  border: none;
+}
+
+.filterButton:hover {
+  background-color: #fdb91b;
+  color: white;
+}
+
+.filterButton:focus {
+  outline: none;
+}
+
+/*FILTER BUTTON STYLING ENDS*/
+
+/*PRODUCT CARD STYLING STARTS*/
+
+#productCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+  margin: 0 auto;
+  padding-bottom: 65px;
+}
+
+.productCard {
+  min-height: 80%;
+  width: calc(100% - 66px);
+  margin: 10px 20px;
+  padding: 10px;
+  border: 3px solid #eaedee;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+}
+
+.productCard:hover {
+  border-color: #fdb91b;
+}
+
+#productImage {
+  width: 150px;
+  height: 150px;
+}
+
+.productName {
+  text-align: center;
+}
+
+#priceAndCalories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productPrice {
+  color: #2d2a24;
+  padding-right: 5px;
+  margin: 5px;
+}
+
+.productCalories {
+  border-left: 1px solid black;
+  padding-left: 10px;
+  margin: 5px;
+  color: #878787;
+}
+
+/*PRODUCT CARD STYLING ENDS*/
+
+/* FOOTER STYLING STARTS */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2d2a24;
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+#copyright {
+  color: white;
+  font-weight: 1;
+  font-size: 13px;
+}
+/* FOOTER STYLING ENDS */
+
+/* CART PAGE STYLING STARTS */
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  border: 2px solid #eaedee;
+  border-radius: 20px;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.cartProductImage {
+  max-width: 90px;
+  height: auto;
+}
+
+.productName {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.remove {
+  background-color: transparent;
+  border: none;
+  color: rgb(255, 0, 0);
+  text-decoration: underline;
+  padding: 0px 30px 0 20px;
+}
+
+.remove:hover {
+  color: #2d2a24;
+}
+
+.cartContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 750px;
+  margin-bottom: 30px;
+}
+
+#cartBody {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.cartContainer h1 {
+  margin-bottom: 10px;
+}
+
+.nameAndQty {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 403px;
+}
+
+.cartItemQuantity {
+  width: 32px;
+}
+
+#subtotalContainer {
+  background-color: #fdb91b;
+  border-radius: 12px;
+  border: none;
+  height: 40px;
+}
+
+.checkout {
+  background-color: #2d2a24;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border-style: none;
+}
+
+.checkout:hover {
+  background-color: black;
+}
+
+#itemQty {
+  width: 100px;
+  text-align: center;
+}
+
+#subtotalContainer h2 {
+  width: 402px;
+  text-align: left;
+}
+
+#cartItmes {
+  width: 100%;
+}
+.cartHeader {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.alert {
+  width: 320px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 3px solid #fdb91b;
+  background-color: #ffce5d;
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  transform: translate(-50%);
+  display: none;
+  justify-content: space-between;
+  filter: drop-shadow(2px 2px 4px #878787);
+}
+
+.emptyCart {
+  display: flex;
+  align-self: center;
+  padding-bottom: 29px;
+}
+
+/* CART PAGE STYLING ENDS */
+/* Applies to a screen-size of 768px or less ***************MOBILE VIEW***********/
+@media (max-width: 768px) {
+  .product-container {
+    border: 3px solid #fdb91b;
+    border-radius: 1em;
+    width: 75%;
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 50px;
+  }
+
+  .product-page-images {
+    height: 250px;
+    width: 250px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .info-layout h2,
+  .info-layout p {
+    padding-bottom: 1em;
+  }
+
+  .info-layout {
+    padding: 1em;
+  }
+
+  .radios {
+    position: absolute;
+    top: 3.5em;
+    left: -0.5em;
+    display: flex;
+  }
+
+  .add-minus input[type="radio"] {
+    margin-right: 1em;
+  }
+}
+
+/* PRODUCT MAIN PAGE DESKTOP STYLING STARTS */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .cartContainer {
+    width: 350px;
+  }
+
+  .cartItem {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nameAndQty {
+    width: 100%;
+    align-items: center;
+  }
+  .price {
+    padding: 15px;
+  }
+  .remove {
+    padding-bottom: 10px;
+  }
+
+  #subtotalContainer {
+    height: 100%;
+    flex-direction: column;
+  }
+  #subtotalContainer h2 {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  #itemQty {
+    padding-top: 5px;
+  }
+  .totalPrice {
+    padding-bottom: 10px;
+  }
+  .alert {
+    top: 550px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  #productTop {
+    flex-direction: row;
+    max-width: 1350px;
+    width: 85vw;
+  }
+
+  .productCard {
+    width: calc(33% - 66px);
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .productCard {
+    width: calc(25% - 66px);
+  }
+  #productCards {
+    max-width: 1350px;
+  }
+}
+
+/* PRODUCT MAIN PAGE DESKTOP STYLING ENDS */

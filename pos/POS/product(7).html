@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="pos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <title>Blended Lavender Mocha</title>
+  </head>
+  <body>
+    <div
+      id="productData"
+      data-image="assets/PNG/lavendarMocha.png"
+      data-name="Blended Lavender Mocha"
+      data-price="500"
+      style="display: none"
+    ></div>
+
+
+    <div class="product-container">
+      <div class="back-button">
+        <a class="back-button-link" href="index.html"
+          ><i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp; Back to
+          menu</a
+        >
+      </div>
+      <img
+        class="product-page-images"
+        src="assets/PNG/lavendarMocha.png"
+        alt="blended lavender mocha"
+      />
+      <!--This will be the product image -->
+      <div class="info-layout">
+        <h2>Blended Lavender Mocha</h2>
+        <p>
+          House-made chocolate sauce mixed with house-made lavender syrup and
+          milk, a single-shot of espresso and blended with ice.
+        </p>
+        <span>₱500 &nbsp; | &nbsp; 380 Cal.</span>
+      </div>
+      <div class="lower-buttons">
+        <div class="add-minus">
+          <button class="minus-quantity" id="minus">-</button
+          ><input type="number" class="numOf" min="1" value="1" /><button
+            id="add"
+            class="add-quantity"
+          >
+            +
+          </button>
+        </div>
+        <div class="add-cart">
+          <button id="add-to-cart">
+            <i class="fas fa-shopping-cart"></i> Add to Cart
+          </button>
+          <!--This will need to update with a price when customer hits the add or subtract buttons-->
+        </div>
+      </div>
+      <div class="alert">
+        <div class="closebtn">
+          <i class="fas fa-check"></i>
+        </div>
+        <p>The item(s) have been added to the Cart.</p>
+      </div>
+    </div>
+    <script src="product.js"></script>
+  </body>
+</html>

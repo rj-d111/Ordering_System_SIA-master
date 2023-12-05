@@ -1,0 +1,143 @@
+* {
+	font-family: "IBM Plex Sans", sans-serif;
+}
+
+/*FORM INPUT STYLING START*/
+
+#footerStyling {
+	margin-top: 35px;
+}
+
+/*MINI CART STYLING START*/
+#receiptCheckoutContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#receipt {
+	border: 2px solid #eaedee;
+	width: 500px;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 70px;
+}
+
+.thankYou {
+	width: 300px;
+	padding: 20px;
+	margin-top: 20px;
+}
+.back-button-from-receipt {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 30px;
+}
+
+#receiptCartContainer {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.miniReceiptItem {
+	border: 2px solid #eaedee;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10px 0;
+}
+
+.miniReceiptItem img {
+	width: 15%;
+	height: auto;
+}
+
+p.itemPrice {
+	color: #918f8f;
+	padding-right: 10px;
+}
+
+p.itemName {
+	font-weight: 700;
+}
+
+p.priceLabel,
+p.totalLabel {
+	width: 50%;
+	padding: 5px 0;
+}
+
+p.priceLabel,
+p.priceValue {
+	font-size: 1.2rem;
+}
+
+p.totalLabel,
+p.totalValue {
+	font-weight: 900;
+	font-size: 1.5rem;
+}
+
+.receiptTotalCalculator {
+	background-color: rgb(239, 242, 244);
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 25px 15%;
+}
+
+.finalTotal {
+	background-color: rgb(255, 192, 35);
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 25px 15%;
+}
+
+.miniReceiptQuantityContainer {
+	display: flex;
+}
+
+.receiptItemQty {
+	margin-left: 5px;
+}
+
+.receiptNameAndQty {
+	width: 270px;
+}
+
+.receiptPrice {
+	margin-right: 30px;
+}
+/*DESKTOP STYLING*/
+
+@media only screen and (min-width: 769px) {
+	.checkoutForm {
+		width: 100%;
+	}
+
+	#receiptCartContainer {
+		width: 90%;
+	}
+}
+
+@media only screen and (min-width: 1025px) {
+	.checkoutForm {
+		width: 100%;
+	}
+
+	#receiptCartContainer {
+		width: 90%;
+	}
+}

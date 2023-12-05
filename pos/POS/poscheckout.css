@@ -1,0 +1,53 @@
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 0 10px;
+	border-bottom: 2px solid #eaedee;
+	margin-bottom: 20px;
+}
+
+a{
+	text-decoration: none;
+    color:black;
+    margin-left: 5em;
+}
+
+.formPage{
+    font-size: 25px; 
+}
+
+form{
+    position: relative;
+    text-align: left;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 25px;
+    padding: 50px;
+}
+
+label {
+    font-size: 20px;
+}
+
+form{
+	text-decoration: none ;
+
+}
+
+.checkoutSummary{
+    width: 150px;
+    height: 250px;  
+    padding: 90px;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin-left: 45%;
+    display: inline;
+}
+
+:-formPage-input-placeholder{
+    border: round;
+}

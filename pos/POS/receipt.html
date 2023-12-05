@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Decaffeinated Panda</title>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="pos.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" />
+        <link rel="stylesheet" href="receipt.css">
+    </head>
+    <div id="page-container">
+        <div id="content-wrap">
+            <!-- all other page content -->
+            <header>
+                <img id="logo" src="assets/SVG/decafPandaLogo.svg" alt="Decaffeinated Panda Logo" />
+                <nav>
+                    <ul id="menu">
+                        <li><a href="index.html">MENU</a></li>
+                        <li>
+                            <!-- Have to link cart HTML once completed -->
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- all other page content -->
+    
+            <body>
+                <div id="page-container">
+                    <div id="receiptCheckoutContainer">
+                        <div id="receipt">
+                        <div class="thankYou">
+                            <h2>Thank you for your order!</h2>
+                            <p>Your item(s):</p>
+                        </div>
+                        <div id="receiptCartContainer">
+                            <div id="miniReceiptItems">
+
+                                <!-- Template mini receipt item starts -->
+
+                                <!-- <div class="miniReceiptItem">
+                                    <img
+					                    class="cartProductImage"
+					                    src="assets/PNG/avocado.png"
+					                    alt="Avocado Toast"/>
+                                    <div class="receiptNameAndQty">
+                                        <h3 class="miniReceiptProductName">Avocado Toast</h3>
+                                            <div class="miniReceiptQuantityContainer">
+                                                <p>QTY:</p><p class="receiptItemQty">1</p>
+                                            </div>
+                                    </div>
+                                    <p class="receiptPrice">$4.49</p>
+                                </div> -->
+                                
+                                <!-- Template mini receipt item ends -->
+
+                            </div>
+
+
+                            <div id="receiptTotalContainer">
+                                <div class="receiptTotalCalculator">
+                                    <p class="priceLabel">Subtotal</p>
+                                    <p id="subtotalValue" class="priceValue">$XXX.XX</p>
+                                    <p class="priceLabel">Tax</p>
+                                    <p id="taxValue" class="priceValue">$XXX.XX</p>
+                                </div>
+                                <div class="finalTotal">
+                                    <p class="totalLabel">Total</p>
+                                    <p id="totalValue" class="totalValue">$XXX.XX</p>
+                                </div>
+                            </div>
+                            <div class="back-button-from-receipt">
+                                <a class="back-button-link" href="index.html"
+                                    ><i
+                                        class="fa fa-arrow-left"
+                                        aria-hidden="true"
+                                    ></i
+                                    >&nbsp; Back to menu</a
+                                >
+                            </div>
+                        </div>
+                       </div>
+                    </div>
+                    </div>
+                </div>
+                <footer id="footerStyling">
+                    <p id="copyright">
+                        ©2021 Grand Circus. All Rights Reserved.
+                        Decaffeinated Panda is a registered
+                        trademark of Grand Circus.
+                    </p>
+                </footer>
+                <script src="pos.js"></script>
+                <script src="receipt.js"></script>
+            </body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decaffeinated Panda</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="pos.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" />
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<div id="page-container">
+    <div id="content-wrap">
+        <!-- all other page content -->
+        <header>
+            <img id="logo" src="assets/SVG/decafPandaLogo.svg" alt="Decaffeinated Panda Logo" />
+            <nav>
+                <ul id="menu">
+                    <li><a href="index.html">MENU</a></li>
+                    <li>
+                        <!-- Have to link cart HTML once completed -->
+                        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- all other page content -->
+
+        <body>
+            <div id="page-container">
+                <div id="checkoutContainer">
+                    <div class="checkoutForm">
+                        <h1>CHECKOUT</h1>
+                        <div class="formInfo">
+                            <label for="contactInfo">Contact Information</label>
+                            <input type="email" class="formInput" placeholder="Email" />
+                            <input type="text" class="formInput" placeholder="Phone Number" />
+                        </div>
+                        <div class="formInfo">
+                            <label for="contactInfo">Payment</label>
+                            <div class="paymentTypes">
+                                <div class="paymentSelection">
+                                    <input type="radio" id="cardPaymentSelection" name="Payment Type" value="Credit Card">
+                                    <label for="cardPaymentSelection">Pay With Credit Card</label>
+                                </div>
+                                <div class="paymentSelection">
+                                    <input type="radio" id="cashPaymentSelection" name="Payment Type" value="Cash">
+                                    <label for="cashPaymentSelection">Pay With Cash</label>
+                                </div>
+                                <div class="paymentSelection">
+                                    <input type="radio" id="faceIDPaymentSelection" name="Payment Type" value="Face ID">
+                                    <label for="faceIDPaymentSelection">Pay With Face ID</label>
+                                </div>
+
+                            </div>
+                                <div class="payWithCard">
+                                    <input type="text" class="formInput" placeholder="Credit Card Number" />
+                                    <input type="text" class="formInput" placeholder="Name On Card" />
+                                    <div class="smallFormInfo">
+                                        <input type="text" class="formInput inputHalf"
+                                            placeholder="Expiration Date (MM/YY)" />
+                                        <input type="text" class="formInput inputHalf" placeholder="Security Code" />
+                                    </div>
+                                    <div class="formInfo">
+                                        <label for="contactInfo">Billing Address</label>
+                                        <div class="smallFormInfo">
+                                            <input type="text" class="formInput inputHalf" placeholder="First Name" />
+                                            <input type="text" class="formInput inputHalf" placeholder="Last Name" />
+                                        </div>
+                                        <input type="text" class="formInput" placeholder="Company (optional)" />
+                                        <input type="text" class="formInput" placeholder="Address" />
+                                        <input type="text" class="formInput" placeholder="Apartment, Suite, ect. (optional)" />
+                                        <input type="text" class="formInput" placeholder="City" />
+                                        <div class="smallFormInfo">
+                                            <input type="text" class="formInput inputThird" placeholder="United States" />
+                                            <input type="text" class="formInput inputThird" placeholder="Zip Code" />
+                                            <input type="text" class="formInput inputThird" placeholder="State" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="payWithCash">
+                                    <label for="cashInput">Please enter the exact cash amount</label>
+                                    <div class="cashInputs">
+                                        <div class="inputContainer-left">
+                                    <input id="cashProvided" name="cashInput" type="number" class="formInput" min="0" placeholder="Cash Payment" />
+                                    <button class="calculateChange">CALCULATE</button>
+                                </div>
+                                    <div class="changeDue">
+                                        <p>Change Due: </p><p id="changeAmount">₱0.00</p>
+                                    </div>
+                                </div>
+                                </div>
+
+                                <div class="payWithFaceID">
+                                    <div id="videoOverlayContainer">
+                                        <video autoplay="true" id="video">​</video>
+                                        <img id="faceIcon" src="assets/SVG/faceID.svg" alt="Face ID Scan">
+                                        <img id="checkIcon" src="assets/SVG/check.svg" alt="Face ID Approved">
+                                    </div>
+                                    <button class="cameraShutter"><i class="fas fa-camera fa-2x"></i></button>
+                                </div>
+
+                        </div>
+                        
+                    </div>
+                    <div id="miniCartContainer">
+                        <div id="miniCartItems">
+                            <div id="itemsInCart">
+                        
+                            <!-- Template mini receipt item starts -->
+                            <!-- <div class="miniCartItem">
+                                <img
+                                    class="miniCartProductImage"
+                                    src="assets/PNG/avocado.png"
+                                    alt="Avocado Toast"/>
+                                <div class="cartNameAndQty">
+                                    <h3 class="cartProductName">Avocado Toast</h3>
+                                        <div class="miniCartQuantityContainer">
+                                            <p>QTY:</p><p class="miniCartItemQty">1</p>
+                                        </div>
+                                </div>
+                                <p class="miniCartPrice">$4.49</p>
+                            </div>
+                            </div> -->
+                            <!-- Template mini receipt item ends -->
+                        </div>
+
+                        <div id="totalContainer">
+                            <div class="totalCalculator">
+                                <p class="priceLabel">Subtotal</p>
+                                <p id="subtotalValue" class="priceValue">₱XXX.XX</p>
+                                <p class="priceLabel">Tax</p>
+                                <p id="taxValue" class="priceValue">₱XXX.XX</p>
+                            </div>
+                            <div class="finalTotal">
+                                <p class="totalLabel">Total</p>
+                                <p id="totalValue" class="totalValue">₱XXX.XX</p>
+                            </div>
+                        </div>
+                        <a href="receipt.html"><button id="checkoutButton">PAY NOW</button></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <footer id="footerStyling">
+                <p id="copyright">
+                    ©2021 Grand Circus. All Rights Reserved.
+                    Decaffeinated Panda is a registered
+                    trademark of Grand Circus.
+                </p>
+            </footer>
+            <script src="pos.js"></script>
+            <script src="checkout.js"></script>
+        </body>
+
+</html>

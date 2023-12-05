@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Cart</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="pos.css" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+		/>
+    </head>
+    <style>
+        #logo {
+            max-width: 200px;
+        }
+    
+        li a {
+            text-decoration: none;
+            color: black;
+            padding-right: 50px;
+        }
+    
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            /*Padding causing horizontal scroll
+      padding: 0 10px;*/
+            background-color: rgb(255, 255, 255);
+    
+    
+        }
+    
+        b {
+            font-size: 15px;
+            color: #2A4C09;
+        }
+    
+        ul {
+            list-style-type: none;
+            display: flex;
+            padding-right: 30px;
+            margin: 10px;
+    
+        }
+    
+        i {
+            /* You can adjust this value to your desired size */
+            color: #2A4C09;
+        }
+    
+        #menu li a {
+            transition: background-color 0.3s, color 0.3s;
+            /* This adds a smooth transition effect */
+            display: block;
+            /* Make the whole area of the <li> clickable */
+            padding: 10px 20px;
+            /* Some padding for better appearance */
+            text-decoration: none;
+            /* Removes the underline from links */
+            color: inherit;
+            /* Inherits the default color */
+        }
+    
+        #menu li a:hover {
+            background-color: #D8BFA0;
+            /* Light gray background when hovered */
+            color: #333;
+            border-radius: 5px;
+            /* Dark text color when hovered */
+        }
+    
+        ul {
+            list-style-type: none;
+            display: flex;
+            padding-right: 30px;
+        }
+    
+        li {
+            margin: 10px;
+        }
+    </style>
+<header>
+    <img id="logo" src="../assets/SVG/decafPandaLogo.svg" alt="Logo" />
+    <nav>
+        <ul id="menu">
+            <li><a href="M_M Cafe/index.html"><b>HOME</b></a></li>
+            <li><a href="../index.html"><b>MENU</b></a></li>
+            <li><a href="../ABOUT/aboutus.html"><b>ABOUT</b></a></li>
+            <li><a href="../Contact Us/contactus.html"><b>CONTACT US</b></a></li>
+            <li class="active"><a><i class="fas fa-shopping-cart fa-lg"></i></a></li>
+            <li><a href="login_sign-up/login.html"><i class="fas fa-user fa-lg"></i></a></li>
+
+        </ul>
+    </nav>
+</header>
+<body>
+    <div id="cartBody">
+        <div class="cartContainer">
+            <div class="cartHeader">
+            <h1>CART</h1>
+            <div class="back-button-from-receipt">
+                <a class="back-button-link" href="index.html"
+                    ><i
+                        class="fa fa-arrow-left"
+                        aria-hidden="true"
+                    ></i
+                    >&nbsp; Continue Shopping</a
+                >
+            </div>
+        </div>
+            <div id="cartItmes" class="cartItems"></div>
+
+            
+            <h2 class = "emptyCart">Your cart is empty :(</h2>
+            <!-- Start Subtotal Container -->
+            <div class="cartItem" id="subtotalContainer">
+                <p id="itemQty">0 items</p>
+                <h2>Subtotal</h2>
+                <p class="totalPrice">₱0.00</p>
+                <!-- Remember to link all the correct form html -->
+                <a href="checkout.html"><button class="checkout" >CHECKOUT</button></a>
+            </div>
+            <!-- End Subtotal Container -->
+            
+        </div> <!-- End Cart Container -->
+
+    
+        
+
+    </div>
+    <!-- Starting Footer. Put all other code above this line. -->
+    <footer>
+        <p id="copyright">
+        ©2021 Grand Circus. All Rights Reserved.
+        Decaffeinated Panda is a registered
+        trademark of Grand Circus.
+        </p>
+    </footer>
+</div> <!-- End of Content Wrap -->
+</div> <!-- End of Page Container -->
+<script src="pos.js"></script>
+<script src="cart.js"></script>
+</body>
+</html>

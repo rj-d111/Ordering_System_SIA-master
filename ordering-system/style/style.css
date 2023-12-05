@@ -1,0 +1,80 @@
+/* Insert Lexend Font throughout this page */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Color Schemes */
+:root{
+    --maroon: #800000;
+    --light-maroon: #993333;
+    --scarlet: #da4837;
+    --red: #CA0100;
+    --dark-gray: #1B1818;
+    --dandelion: #EEBA2B;
+    --yellow-orange: #F6B14B;
+    --yellow-pastel: #FFDF55;
+    --yellow-dark: #B79325;
+    --brown: #8F5231;
+    --pale-robin-egg-blue: #DEE8E6;  /* Pale Robin Egg Blue */
+    --dark-grayish-magenta: #686768;        /* Dark Grayish Magenta */
+    --light-steel-blue: #C8D1D2;      /* Light Steel Blue */
+    --dark-grayish-magenta: #686768;      /* Dark Grayish Magenta */
+    --dark-slate-blue: #494B60;      /* Dark Slate Blue */
+}
+
+/* When Highlighted Selection */
+::selection{
+    background-color: var(--light-maroon);
+    color: white;
+}
+
+/* Navbar */
+body{
+    font-family: 'Lexend', sans-serif;
+}
+
+.navbar{
+    height: 112.5px;
+}
+.navbar-maroon{
+    background-color: var(--maroon);
+}
+
+.bg-maroon{
+    background-color: var(--maroon);
+}
+
+/* Offcanvas */
+.offcanvas-header {
+    background-color: var(--light-maroon);
+  }
+  
+  .offcanvas-body {
+    background-color: var(--light-maroon);
+  }
+  
+  /* Grub Grab Logo */
+  .grub-grab-logo{
+    max-height: 90px; 
+    width: auto;
+  }
+
+  @media only screen and (max-width: 320px) {
+    .grub-grab-logo{
+        width: 90%;
+    }
+  }
+
+  /* Body Content */
+  .my-div {
+    position: relative;
+    top: 120px;  /*At least 112.5px */
+    height: 200vh;
+}
+
+  .btn-maroon{
+    background-color: var(--maroon);
+    color: white;
+  }
+
+
+  /* Footer */
+ 
