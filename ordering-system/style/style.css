@@ -64,17 +64,14 @@ body{
   }
 
   /* Body Content */
-  .my-div {
-    position: relative;
-    top: 120px;  /*At least 112.5px */
-    height: 200vh;
+main>.container-xl{
+  /* Put top and bottom space body content so it does not overlapp */
+  padding: 10% 0 10% 0; 
 }
 
-  .btn-maroon{
-    background-color: var(--maroon);
-    color: white;
-  }
-
+.btn-maroon{
+  background-color: var(--maroon);
+  color: white;
+}
 
   /* Footer */
- 
