@@ -66,7 +66,7 @@ body{
   /* Body Content */
 main>.container-xl{
   /* Put top and bottom space body content so it does not overlapp */
-  padding: 10% 0 10% 0; 
+  padding: 112.5px 0 10% 0; 
 }
 
 .btn-maroon{
